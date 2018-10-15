@@ -38,7 +38,7 @@ public class test_Api {
 			 SimpleDateFormat df =new SimpleDateFormat("mmss");
 		      Date date=new Date();
 		      String time=df.format(date);
-			ps=new PrintStream("hbase_report.txt");
+			ps=new PrintStream("output/hbase_report.txt");
 			HBaseInitConnection hbc=new HBaseInitConnection();
 			Configuration conf= hbc.authentication();
 			Connection connection = hbc.getConnection(conf);	
