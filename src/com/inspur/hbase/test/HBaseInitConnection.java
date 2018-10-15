@@ -32,7 +32,7 @@ public class HBaseInitConnection {
 	public static Configuration initConfig() {
 		//Configuration conf = HBaseConfiguration.create();
 		conf.set("hbase.zookeeper.quorum",
-				"indata-10-110-13-165.indata.com:2181,indata-10-110-13-164.indata.com:2181,indata-10-110-13-163.indata.com:2181");
+				"indata-10-110-13-124.indata.com:2181,indata-10-110-13-125.indata.com:2181,indata-10-110-13-126.indata.com:2181");
 		//System.out.println("hbase.zookeeper.quorum");
 		conf.set("zookeeper.znode.parent", "/hbase-secure");
 		conf.set("hbase.zookeeper.property.clientPort", "2181");
@@ -69,7 +69,7 @@ public class HBaseInitConnection {
 			String krbStr = "resource/krb5.conf";
 			//System.out.println(krbStr);
 			System.setProperty("java.security.krb5.conf", krbStr);
-			String principal = "hbase/indata-10-110-13-164.indata.com@INDATA.COM";
+			String principal = "hbase/indata-10-110-13-125.indata.com@INDATA.COM";
 			//File f2=new File("/opt/shell/auto-test/api/resource/hbase.service.keytab");
 			//String keytabFilePath = f2.getAbsolutePath();
 			//String keytabFilePath = "/opt/shell/auto-test/api/resource/hbase.service.keytab";
